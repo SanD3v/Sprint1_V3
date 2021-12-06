@@ -18,7 +18,7 @@ public class SwaggerConfig {
 	@Bean
 	public Docket api() {
 		return new Docket(DocumentationType.SWAGGER_2).select()
-				.apis(RequestHandlerSelectors.basePackage("com.rms.controller")).paths(PathSelectors.regex("/rms.*"))
+				.apis(RequestHandlerSelectors.basePackage("com.rms.controller")).paths(PathSelectors.regex("/final.*"))
 				.build().apiInfo(getApiInfo());
 	}
 
